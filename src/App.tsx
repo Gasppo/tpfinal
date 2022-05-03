@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logoPrincipal from './assets/logoConFondo.jpg';
+import HeaderBar from './Sections/Header';
+import Who from './Sections/Who';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="relative" >
+      <HeaderBar />
+      <div className="w-full min-h-[90vh] bg-[url('../public/grupal-oveja.jpg')] bg-no-repeat bg-cover bg-center flex justify-center items-center  " />
+      <Who/>
+      <div className="ml-2 text-white absolute left-[42%] top-[50%] " >
+        <img src={logoPrincipal} alt='logo' className='ml-2 w-[30%] h-[30%] rounded-3xl border-2 border-slate-400 shadow-2xl' />
+      </div>
     </div>
   );
 }
