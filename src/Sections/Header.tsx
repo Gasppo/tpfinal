@@ -28,7 +28,10 @@ const HeaderBar = (props: HeaderBarProps) => {
     const handleFacebookOpen = () => {
         window.open("https://www.facebook.com/Ovejanegragrupoteatral");
     };
-
+    
+    const handleYoutubeOpen = () => {
+        window.open("https://www.youtube.com/channel/UCU_c7hPVtjkvo7bXSmVvoCw");
+    };
 
     return (
         <FadeContainer threshold={100} timeout={1000}>
@@ -59,7 +62,7 @@ const HeaderBar = (props: HeaderBarProps) => {
                 <IconButton
                     ref={anchorRef}
                     id="composition-button"
-                    onClick={handleInstagramOpen} >
+                    onClick={handleYoutubeOpen} >
                     <YouTubeIcon className="w-8 h-8 text-slate-600" />
                 </IconButton>
             </div>

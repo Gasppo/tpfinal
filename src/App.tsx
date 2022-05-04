@@ -3,6 +3,7 @@ import logoPrincipal from './assets/logoConFondo.jpg';
 import HeaderBar from './Sections/Header';
 import Integrantes from './Sections/Integrantes';
 import Producciones from './Sections/Producciones';
+import Reconocimientos from './Sections/Reconocimientos';
 import Who from './Sections/Who';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Who/>
       <Integrantes/>
       <Producciones/>
+      <Reconocimientos/>
     </div>
   );
 }
