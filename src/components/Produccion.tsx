@@ -1,5 +1,4 @@
 import React from 'react'
-import { lorem } from '../assets/lorem'
 import { ProduccionType } from '../Sections/Producciones'
 
 interface ProduccionProps {
